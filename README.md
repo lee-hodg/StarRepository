@@ -1,3 +1,8 @@
+# About this repo
+
+![Demo 1](https://github.com/lee-hodg/StarRepository/blob/master/app/src/public/demo1.jpg?raw=true)
+![Demo 2](https://github.com/lee-hodg/StarRepository/blob/master/app/src/public/demo2.jpg?raw=true)
+
 # How to run this project
 
 Truffle backed
