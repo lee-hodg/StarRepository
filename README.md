@@ -1,5 +1,8 @@
 # About this repo
 
+This repo creates a decentralized Star Notary service, using Solidity EC721 non-fungible tokens (NFTs) to represent
+the stars.
+
 ![Demo 1](https://github.com/lee-hodg/StarRepository/blob/master/app/src/public/demo1.png?raw=true)
 ![Demo 2](https://github.com/lee-hodg/StarRepository/blob/master/app/src/public/demo2.png?raw=true)
 
