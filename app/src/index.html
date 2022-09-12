@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StarNotary DAPP</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
+    <!-- <link type="text/css" href="style.css"> -->
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+      * {
+        font-family: "Open Sans", sans-serif;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #111;
+        background-repeat: no-repeat;
+      }
+
+      .signupSection {
+        background: url('http://localhost:5555/original.jpg');
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 800px;
+        height: 450px;
+        text-align: center;
+        display: flex;
+        color: white;
+        box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      .info {
+        width: 45%;
+        background: rgba(20, 20, 20, 0.8);
+        padding: 30px 0;
+        border-right: 5px solid rgba(30, 30, 30, 0.8);
+      }
+      .info h2 {
+        padding-top: 30px;
+        font-weight: 300;
+      }
+      .info p {
+        font-size: 18px;
+      }
+      .info .icon {
+        font-size: 8em;
+        padding: 20px 0;
+        color: rgb(10, 180, 180);
+      }
+
+      .starForm {
+        width: 70%;
+        padding: 30px 0;
+        background: rgba(20, 40, 40, 0.8);
+        transition: 0.2s;
+      }
+      .starForm h2 {
+        font-weight: 300;
+      }
+
+      .inputFields {
+        margin: 15px 0;
+        font-size: 16px;
+        padding: 10px;
+        width: 250px;
+        border: 1px solid rgb(10, 180, 180);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background: rgba(20, 20, 20, 0.2);
+        color: white;
+        outline: none;
+      }
+
+      .noBullet {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      #create-btn {
+        border: 1px solid rgb(10, 180, 180);
+        background: rgba(20, 20, 20, 0.6);
+        font-size: 18px;
+        color: white;
+        margin-top: 20px;
+        padding: 10px 50px;
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      #create-btn:hover {
+        background: rgba(20, 20, 20, 0.8);
+        padding: 10px 80px;
+      }
+      #lookup-btn {
+        border: 1px solid rgb(10, 180, 180);
+        background: rgba(20, 20, 20, 0.6);
+        font-size: 18px;
+        color: white;
+        margin-top: 20px;
+        padding: 10px 50px;
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      #lookup-btn:hover {
+        background: rgba(20, 20, 20, 0.8);
+        padding: 10px 80px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- <br>
+      <h1>Create a Star</h1>
+      <br><label for="starName">Star Name:</label><input type="text" id="starName"></input>
+      <br><label for="starId">Star ID:</label><input type="text" id="starId"></input>
+      <br><br><button id="createStar" onclick="App.createStar()">Create Star</button>
+      <br>
+      <hr>
+      <br>
+      <h1>Look up a Star</h1>
+      <br><label for="name">Star ID:</label><input type="text" id="lookid"></input>
+      <br><br><button onclick="App.lookUp()">Look Up a Star</button>
+      <hr>
+      <br>
+      <span id="status"></span>
+      <br> -->
+
+  
+  <div class="signupSection">
+    <div class="info">
+      <h2>Star Notary Service</h2>
+      <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+      <p>A piece of heaven</p>
+      <br>
+      <span id="status"></span>
+      <br>
+    </div>
+    <div class="starForm" name="starform">
+      <ul class="noBullet">
+        <li>
+          <label for="starName"></label>
+          <input type="text" class="inputFields" id="starName" name="starName" placeholder="Star Name" value=""/>
+        </li>
+        <li>
+          <label for="starId"></label>
+          <input type="text" class="inputFields" id="starId" name="starId" placeholder="Star Id" value=""/>
+        </li>
+        <li id="center-btn">
+          <input type="button" id="create-btn" onclick="App.createStar()" name="create" alt="Create Star" value="Create Star">
+        </li>
+        <li>
+          <label for="lookup"></label>
+          <input type="text" class="inputFields" id="lookup" name="lookup" placeholder="Look Up" value=""/>
+        </li>
+        <li id="center-btn">
+          <input type="button" onclick="App.lookUp()" id="lookup-btn" name="lookup" alt="Lookup Star" value="Lookup Star">
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  
+    <script src="index.js"></script>
+  </body>
+</html>
